@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up — CareerPath</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="animated-bg"></div>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <div class="auth-page">
+        <div class="auth-container">
+            <div class="glass-card auth-card">
+                <div class="auth-header">
+                    <a href="index.html" class="nav-logo" style="justify-content: center; margin-bottom: 24px;">
+                        <div class="nav-logo-icon">🧭</div>
+                        <span>CareerPath</span>
+                    </a>
+                    <h1>Create Account</h1>
+                    <p>Start your career discovery journey</p>
+                </div>
+
+                <form id="signupForm">
+                    <div class="form-group" id="nameGroup">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" autocomplete="name">
+                        <p class="form-error" id="nameError"></p>
+                    </div>
+
+                    <div class="form-group" id="emailGroup">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="you@example.com" autocomplete="email">
+                        <p class="form-error" id="emailError"></p>
+                    </div>
+
+                    <div class="form-group" id="passwordGroup">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Min 6 characters" autocomplete="new-password">
+                        <p class="form-error" id="passwordError"></p>
+                    </div>
+
+                    <div class="form-group" id="confirmPasswordGroup">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="password" id="confirmPassword" placeholder="Re-enter password">
+                        <p class="form-error" id="confirmPasswordError"></p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg auth-submit" id="signupBtn">
+                        Create Account
+                    </button>
+                </form>
+
+                <div class="auth-footer">
+                    Already have an account? <a href="login.html">Sign In</a>
+                </div>
+
+                <a href="index.html" class="auth-back">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

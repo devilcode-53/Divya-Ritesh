@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard — CareerPath</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="animated-bg"></div>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">🧭</div>
+                <span>CareerPath</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="assessment.html">Assessment</a>
+                <a href="results.html">Results</a>
+            </div>
+            <div class="nav-auth" id="navAuth"></div>
+        </div>
+    </nav>
+
+    <div class="dashboard-page">
+        <div class="dashboard-container">
+            <!-- Welcome -->
+            <div class="dashboard-welcome" id="dashboardWelcome">
+                <h1>Good Morning 👋</h1>
+                <p>Here's your career discovery progress.</p>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid" id="statsGrid">
+                <div class="glass-card stat-card">
+                    <div class="stat-card-icon">📝</div>
+                    <h3 id="statAssessments">0</h3>
+                    <p>Assessments Taken</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-card-icon">🎯</div>
+                    <h3 id="statAnswers">0</h3>
+                    <p>Questions Answered</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-card-icon">💼</div>
+                    <h3 id="statCareers">8</h3>
+                    <p>Careers Explored</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-card-icon">📈</div>
+                    <h3 id="statCompletion">0%</h3>
+                    <p>Profile Complete</p>
+                </div>
+            </div>
+
+            <!-- Dashboard Grid -->
+            <div class="dashboard-grid">
+                <!-- Left Column -->
+                <div>
+                    <!-- Score Chart -->
+                    <div class="glass-card dashboard-card mb-3">
+                        <div class="dashboard-card-header">
+                            <h2>📊 Career Match Scores</h2>
+                        </div>
+                        <div class="chart-container">
+                            <div class="bar-chart" id="barChart">
+                                <!-- Chart bars loaded dynamically -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Results -->
+                    <div class="glass-card dashboard-card">
+                        <div class="dashboard-card-header">
+                            <h2>🏆 Top Career Matches</h2>
+                            <a href="results.html" class="btn btn-sm btn-outline">View All</a>
+                        </div>
+                        <div class="recent-results-list" id="recentResultsList">
+                            <p style="color: var(--text-gray); text-align: center; padding: 20px;">
+                                Take an assessment to see your career matches.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div>
+                    <!-- Profile Card -->
+                    <div class="glass-card dashboard-card mb-3">
+                        <div class="dashboard-card-header">
+                            <h2>👤 Profile</h2>
+                        </div>
+                        <div class="profile-info" id="profileInfo">
+                            <!-- Dynamic profile -->
+                        </div>
+                        <div class="completion-ring-container">
+                            <div class="completion-ring">
+                                <svg viewBox="0 0 120 120">
+                                    <defs>
+                                        <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                            <stop offset="0%" style="stop-color:#F5C542"/>
+                                            <stop offset="100%" style="stop-color:#FFD700"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <circle class="bg-ring" cx="60" cy="60" r="50"/>
+                                    <circle class="progress-ring" id="completionRing" cx="60" cy="60" r="50"
+                                            stroke-dasharray="314" stroke-dashoffset="314"/>
+                                </svg>
+                                <span class="completion-percentage" id="completionPercent">0%</span>
+                            </div>
+                        </div>
+                        <p class="text-center" style="color: var(--text-gray); font-size: 0.85rem;">Profile Completion</p>
+                    </div>
+
+                    <!-- Preferred Career -->
+                    <div class="glass-card dashboard-card mb-3" id="preferredCareerCard" style="display: none;">
+                        <div class="dashboard-card-header">
+                            <h2>⭐ Top Match</h2>
+                        </div>
+                        <div id="preferredCareerContent"></div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="glass-card dashboard-card">
+                        <div class="dashboard-card-header">
+                            <h2>⚡ Quick Actions</h2>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 10px;">
+                            <a href="assessment.html" class="btn btn-primary" style="width: 100%;">
+                                📝 Take Assessment
+                            </a>
+                            <a href="results.html" class="btn btn-secondary" style="width: 100%;">
+                                📊 View Results
+                            </a>
+                            <button class="btn btn-outline" style="width: 100%;" id="logoutDashBtn">
+                                🚪 Logout
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

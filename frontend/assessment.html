@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Assessment — CareerPath</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="animated-bg"></div>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">🧭</div>
+                <span>CareerPath</span>
+            </a>
+            <div class="nav-auth" id="navAuth"></div>
+        </div>
+    </nav>
+
+    <div class="assessment-page">
+        <div class="assessment-container">
+            <div class="assessment-header">
+                <h1>Career Assessment</h1>
+                <p>Answer the following questions honestly to discover your best career match.</p>
+            </div>
+
+            <!-- Progress -->
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span id="progressText">Question 1 of 15</span>
+                    <span id="progressPercent">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+            </div>
+
+            <!-- Question Container -->
+            <div id="questionContainer">
+                <!-- Questions loaded dynamically -->
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="assessment-nav">
+                <button class="btn btn-secondary" id="prevBtn" style="visibility: hidden;">
+                    ← Previous
+                </button>
+                <button class="btn btn-primary" id="nextBtn">
+                    Next →
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/assessment.js"></script>
+</body>
+</html>

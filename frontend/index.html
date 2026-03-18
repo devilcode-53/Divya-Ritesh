@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerPath — Find Your Perfect Career</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">🧭</div>
+                <span>CareerPath</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="#problems">Why Us</a>
+                <a href="#flow">How It Works</a>
+                <a href="#careers">Careers</a>
+            </div>
+
+            <div class="nav-auth" id="navAuth">
+                <!-- Dynamic: Login/Signup or User Info -->
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    AI-Powered Career Assessment
+                </div>
+
+                <h1>
+                    Find Your<br>
+                    <span class="gradient-text">Perfect Career</span><br>
+                    Path
+                </h1>
+
+                <p>
+                    Take our intelligent assessment to discover career paths that align with your skills,
+                    interests, and personality. Get a personalized roadmap to success.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="assessment.html" class="btn btn-primary btn-lg btn-glow" id="heroStartBtn">
+                        🚀 Start Assessment
+                    </a>
+                    <a href="#careers" class="btn btn-secondary btn-lg">
+                        Explore Careers
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <h3>8+</h3>
+                        <p>Career Paths</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>15</h3>
+                        <p>Smart Questions</p>
+                    </div>
+                    <div class="hero-stat">
+                        <h3>100%</h3>
+                        <p>Free Assessment</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="floating-card-icon">💻</div>
+                    <h4>Software Engineer</h4>
+                    <p>92% Match</p>
+                    <div class="score-bar"><div class="score-fill" style="width: 92%"></div></div>
+                </div>
+                <div class="floating-card">
+                    <div class="floating-card-icon">📊</div>
+                    <h4>Data Scientist</h4>
+                    <p>87% Match</p>
+                    <div class="score-bar"><div class="score-fill" style="width: 87%"></div></div>
+                </div>
+                <div class="floating-card">
+                    <div class="floating-card-icon">🎨</div>
+                    <h4>UX Designer</h4>
+                    <p>78% Match</p>
+                    <div class="score-bar"><div class="score-fill" style="width: 78%"></div></div>
+                </div>
+                <div class="floating-card">
+                    <div class="floating-card-icon">🚀</div>
+                    <h4>Product Manager</h4>
+                    <p>73% Match</p>
+                    <div class="score-bar"><div class="score-fill" style="width: 73%"></div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="section" id="problems">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">❌ The Problem</span>
+                <h2>Career Confusion is Real</h2>
+                <p>Millions of students and professionals struggle to find the right career path. Here's why.</p>
+            </div>
+
+            <div class="problems-grid">
+                <div class="glass-card problem-card reveal reveal-delay-1">
+                    <div class="problem-icon">😰</div>
+                    <h3>Career Confusion</h3>
+                    <p>Too many options and no clear direction. Students often choose careers based on peer pressure rather than aptitude.</p>
+                </div>
+                <div class="glass-card problem-card reveal reveal-delay-2">
+                    <div class="problem-icon">📚</div>
+                    <h3>Unstructured Information</h3>
+                    <p>Career information is scattered across the internet. No clear, actionable roadmap from where you are to where you want to be.</p>
+                </div>
+                <div class="glass-card problem-card reveal reveal-delay-3">
+                    <div class="problem-icon">💸</div>
+                    <h3>Expensive Counseling</h3>
+                    <p>Professional career counseling costs ₹5,000 - ₹50,000. Most students can't afford personalized career guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Flow -->
+    <section class="section" id="flow">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">✅ Our Solution</span>
+                <h2>How CareerPath Works</h2>
+                <p>A simple 4-step process to discover your ideal career and get a clear roadmap.</p>
+            </div>
+
+            <div class="flow-container reveal">
+                <div class="flow-step">
+                    <div class="flow-step-icon">
+                        👤
+                        <span class="flow-step-number">1</span>
+                    </div>
+                    <h4>Sign Up</h4>
+                    <p>Create your free account</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon">
+                        📝
+                        <span class="flow-step-number">2</span>
+                    </div>
+                    <h4>Take Assessment</h4>
+                    <p>Answer 15 smart questions</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon">
+                        🤖
+                        <span class="flow-step-number">3</span>
+                    </div>
+                    <h4>Get Analysis</h4>
+                    <p>AI matches your profile</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="flow-step">
+                    <div class="flow-step-icon">
+                        🗺️
+                        <span class="flow-step-number">4</span>
+                    </div>
+                    <h4>View Roadmap</h4>
+                    <p>Step-by-step career plan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section class="section" id="careers">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">💼 Career Paths</span>
+                <h2>Explore Top Careers</h2>
+                <p>Discover in-demand career paths with growth potential and competitive salaries.</p>
+            </div>
+
+            <div class="careers-grid" id="careersGrid">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section reveal">
+        <div class="cta-box">
+            <h2>Ready to Discover Your Path?</h2>
+            <p>Join thousands of students who found their perfect career through our intelligent assessment.</p>
+            <a href="assessment.html" class="btn btn-primary btn-lg btn-glow" id="ctaStartBtn">
+                🚀 Start Free Assessment
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2024 CareerPath. Built with ❤️ for students and professionals.</p>
+        <div class="footer-links">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

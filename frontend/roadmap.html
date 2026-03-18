@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Roadmap — CareerPath</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="animated-bg"></div>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">🧭</div>
+                <span>CareerPath</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="results.html">Results</a>
+            </div>
+            <div class="nav-auth" id="navAuth"></div>
+        </div>
+    </nav>
+
+    <div class="roadmap-page">
+        <div class="roadmap-container">
+            <div class="roadmap-header">
+                <h1>🗺️ Your Career Roadmap</h1>
+                <div class="roadmap-career-badge mt-2" id="careerBadge">
+                    <!-- Dynamic career title -->
+                </div>
+            </div>
+
+            <div class="timeline" id="timelineContainer">
+                <!-- Timeline items loaded dynamically -->
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="results.html" class="btn btn-secondary" style="margin-right: 12px;">← Back to Results</a>
+                <a href="dashboard.html" class="btn btn-primary">📊 Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/roadmap.js"></script>
+</body>
+</html>

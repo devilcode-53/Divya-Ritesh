@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login — CareerPath</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="animated-bg"></div>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <div class="auth-page">
+        <div class="auth-container">
+            <div class="glass-card auth-card">
+                <div class="auth-header">
+                    <a href="index.html" class="nav-logo" style="justify-content: center; margin-bottom: 24px;">
+                        <div class="nav-logo-icon">🧭</div>
+                        <span>CareerPath</span>
+                    </a>
+                    <h1>Welcome Back</h1>
+                    <p>Sign in to continue your career journey</p>
+                </div>
+
+                <form id="loginForm">
+                    <div class="form-group" id="emailGroup">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="you@example.com" autocomplete="email">
+                        <p class="form-error" id="emailError"></p>
+                    </div>
+
+                    <div class="form-group" id="passwordGroup">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password">
+                        <p class="form-error" id="passwordError"></p>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-lg auth-submit" id="loginBtn">
+                        Sign In
+                    </button>
+                </form>
+
+                <div class="auth-footer">
+                    Don't have an account? <a href="signup.html">Sign Up</a>
+                </div>
+
+                <a href="index.html" class="auth-back">← Back to Home</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

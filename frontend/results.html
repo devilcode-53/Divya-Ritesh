@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Results — CareerPath</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="animated-bg"></div>
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-spinner"></div>
+    </div>
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <div class="nav-logo-icon">🧭</div>
+                <span>CareerPath</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="dashboard.html">Dashboard</a>
+                <a href="assessment.html">Retake Test</a>
+            </div>
+            <div class="nav-auth" id="navAuth"></div>
+        </div>
+    </nav>
+
+    <div class="results-page">
+        <div class="results-container">
+            <div class="results-header">
+                <h1>🎉 Your Career Matches</h1>
+                <p style="color: var(--text-gray);">Based on your assessment, here are the careers best suited for you.</p>
+            </div>
+
+            <!-- Top Result -->
+            <div id="topResultContainer"></div>
+
+            <!-- Score Chart -->
+            <div class="glass-card" style="padding: 32px; margin-bottom: 30px;">
+                <h2 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 24px;">📊 Score Breakdown</h2>
+                <div class="score-chart" id="scoreChart"></div>
+            </div>
+
+            <!-- Other Results -->
+            <h2 style="font-size: 1.15rem; font-weight: 600; margin-bottom: 16px;">Other Matches</h2>
+            <div class="other-results-grid" id="otherResults"></div>
+
+            <div class="text-center mt-4">
+                <a href="dashboard.html" class="btn btn-secondary">📊 Go to Dashboard</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/results.js"></script>
+</body>
+</html>
